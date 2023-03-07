@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="15dp"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textSize="12sp"
+        android:text="Telefon numarası"
+        android:layout_marginBottom="6dp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius"
+        android:padding="8dp"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:inputType="phone"
+        />
+
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_weight="5"
+            android:textSize="12sp"
+            android:text="Version Kontrol"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/checkVersion"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_height="45dp"
+            android:text="Kontrol Et"
+            />
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_marginTop="5dp"
+        android:progressDrawable="@drawable/custom_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:progress="0"
+        android:visibility="gone"
+        />
+
+
+</android.support.v7.widget.LinearLayoutCompat>

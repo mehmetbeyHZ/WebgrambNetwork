@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Webgramb Network"
+        android:layout_marginBottom="6dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <Button
+        android:id="@+id/startService"
+        android:layout_width="match_parent"
+        android:textSize="12sp"
+        android:text="Servisi Başlat"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/downloadBytes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download : "
+        android:textColor="#000"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/uploadBytes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload : "
+        android:textColor="#000"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/totalBytes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total : "
+        android:textColor="#000"
+        android:layout_marginLeft="5dp"
+        />
+
+</android.support.v7.widget.LinearLayoutCompat>
